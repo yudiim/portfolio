@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'NOTOSANSKR-BOLD';
+    src: url(../font/NOTOSANSKR-BOLD.woff);
+}
+@font-face {
+    font-family: 'NOTOSANSKR-LIGHT';
+    src: url(../font/NOTOSANSKR-LIGHT.woff);
+}
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url(../font/GmarketSansBold.woff);
+}
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url(../font/GmarketSansLight.woff);
+}
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url(../font/GmarketSansMedium.woff);
+}
+@font-face {
+    font-family: '210-웰컴체OTF-B';
+    src: url(../font/210-웰컴체OTF-B.woff);
+}
+@font-face {
+    font-family: '210-웰컴체OTF-R';
+    src: url(../font/210-웰컴체OTF-R.woff);
+}
+
+
+*{ margin: 0; padding: 0; box-sizing: border-box;}
+a{ text-decoration: none; display: inline-block;}
+ul{ list-style: none;}
+button{ cursor: pointer;}
+
+/* header */
+#header{ width: 100%; position: relative;}
+.menuBtn{ width: 50px; position: fixed; top: 20px; right: 20px; z-index: 9;}
+.menuBtn > img{ width: 100%; cursor: pointer;}
+#header > #drawerMenu{ position: fixed; top: 0; width: 390px; height: 100vh; right: -100%; z-index: 999; background-color: #fff; overflow: hidden;}
+#header > #drawerMenu .closeBtn{ height: 90px;}
+#header > #drawerMenu .closeBtn > img{ width: 50px; margin: 20px 20px 0 320px; cursor: pointer;}
+#header > #drawerMenu ul.menuList > li{ width: 100%; height: 66px;}
+#header > #drawerMenu ul.menuList > li > a{ display: block; width: inherit; color: #7B7B7B; line-height: 66px; padding-left: 43px; font-size: 20px; font-family: 'GmarketSansMedium'; position: relative;}
+#header > #drawerMenu ul.menuList > li > a::after{ content: ''; display: block; position: absolute; bottom: 0; z-index: -1; width: 0; height: 66px; background: #d6c2e4da; left: 0%;}
+#header > #drawerMenu ul.menuList > li > a:hover{ color:#fff; transition: ease-in-out .3s;}
+#header > #drawerMenu ul.menuList > li > a:hover::after{  width: 100%; left: 0; transition: all .5s;}
+
+/* top button */
+#top_btn{ width: 40px; height: 40px; text-align: center; color: #7D7D7D; background-color: #fff; box-shadow: 1px 1px 6px #9999998c; font-size: 12px; border-radius: 20px; cursor: pointer;
+    position: fixed; right: 30px; bottom: 30px; z-index: 99; font-family: 'GmarketSansMedium'; padding-top: 5px;}
+
+/* footer */
+#footer{ font-family: 'GmarketSansLight'; font-size: 16px; text-align: center; line-height: 60px; color: #7D7D7D; background-color: #E9DFF1;}
+    

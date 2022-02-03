@@ -1,0 +1,367 @@
+
+
+#wrap{ width: 100%; height: 100vh;}
+.center{ width: 80%; height: 100vh; margin: auto;}
+.section{ width: 100%; height: 100vh;}
+
+/* *** #section0 intro *** */
+
+#section0{ background-color: #E9DFF1; position: relative;}
+/* #section0 .hide_square1{width: 387px; height: 159px; background-color: #E9DFF1; position: absolute; top: 36%; left: 0%;
+    animation-name: move2; animation-duration: 4s; z-index: 9;}
+    @keyframes move2 {
+        0%   {left:25%; top:36%;}
+        100% {left:0%; top:36%;}
+      }
+#section0 .hide_square2{width: 387px; height: 159px; background-color: #E9DFF1; position: absolute; top: 36%; right: 0%;
+    animation-name: move3; animation-duration: 4s; z-index: 9;}
+    @keyframes move3 {
+        0%   {right:25%; top:36%;}
+        100% {right:0%; top:36%;}
+      }
+#section0 .circle1{ width: 79px; height: 159px; background-color: #fff; border-radius: 79px 0 0 79px; position: absolute; top: 36%; left: 25%;
+    animation-name: move0; animation-duration: 4s; z-index: 99;}
+    @keyframes move0 {
+        0%   {left:45%; top:36%;}
+        100% {left:25%; top:36%;}
+      }
+#section0 .circle2{ width: 79px; height: 159px; background-color: #fff; border-radius: 0 79px 79px 0; position: absolute; top: 36%; right: 25%;
+    animation-name: move1; animation-duration: 4s; z-index: 99;}
+    @keyframes move1 {
+        0%   {right:45%; top:36%;}
+        100% {right:25%; top:36%;}
+      } */
+      
+#section0 .name_area{ letter-spacing: 3px; font-size: 55px; text-align: center; font-family: 'GmarketSansLight'; padding-top: 263px;
+    animation: fadein 5s;}
+    @keyframes fadein {
+        from {
+            opacity:0;
+        }
+        to {
+            opacity:1;
+        }
+    }
+#section0 .portfolio_area{ font-size: 80px; text-align: center; font-family: 'GmarketSansMedium';
+    animation: fadein1 5s;}
+    @keyframes fadein1 {
+        from {
+            opacity:0;
+        }
+        to {
+            opacity:1;
+        }
+    }
+#section0 .scroll_wrap{ position: absolute; left: 42%; bottom: 20%;}
+#section0 .scroll{ color: #4D4D4D; font-size: 16px; letter-spacing: 10px; text-align: center;}
+#section0 .scroll p{ font-weight: 600;}
+#section0 .scroll_down > span{ position: absolute; top: 150%; left: 50%; width: 2px; height: 70px; background-color: #4D4D4D; 
+    animation: scroll-down 2s infinite;}
+    @keyframes scroll-down {
+        0%{ height: 0px;}
+        100%{ height: 70px;}
+    }
+
+
+/* *** #section1 about me *** */
+
+#section1{ background-color: #fff;}
+
+#section1 .about_me_wrap{ display: inline-block; width: 30%; height: 750px; border-right: 2px #E9DFF1; margin-top: 50px;}
+#section1 .about_me{ max-width: 100%; margin: 0 auto;}
+#section1 .about_me_img{ max-width: 280px; height: 280px; border-radius: 50%; margin: auto; background-image: url(../img/profile_img.png); background-position: center center; background-size: contain;}
+#section1 .about_me_text{ max-width: 360px; margin: auto;}
+#section1 .resume_mobile{ display: none;}
+#section1 ul.question{ display: inline-block; width: 35%; float: left; line-height: 40px; font-size: 18px; font-family: 'GmarketSansMedium'; padding-right: 3%; margin-top: 40px;}
+#section1 ul.question li:nth-child(2n-1){ font-size: 16px;}
+#section1 ul.answer{ display: inline-block; width: 60%; float: left; line-height: 40px; font-size: 16px; font-family: 'GmarketSansLight'; margin: 40px 0;}
+#section1 .resume{ display: inline-block; width: 255px; line-height: 60px; height: 60px; border-radius: 127px; background-color: #E9DFF1; margin: 9px 12%; text-align: center;}
+#section1 .resume > a{ display: block; width: inherit; color: #4D4D4D; font-size: 20px; font-family: 'GmarketSansMedium'; position: relative; border-radius: 30px;}
+#section1 .resume > a:hover{ background-color: #D6C2E4; color: #fff; transition: ease-in-out .3s; }
+
+#section1 .profile_text_wrap{ display: inline-block; width: 70%; height: 750px; float: right; margin-top: 100px; border-left: 2px #E9DFF1;}
+#section1 h4{ font-size: 35px; color: #C9BED2; font-family: 'GmarketSansBold'; margin-left: 6%;}
+#section1 .profile_text{ max-width: 90%; margin: auto; font-size: 16px; font-family: 'GmarketSansLight';}
+#section1 .main_table{ text-align: left; vertical-align: top; margin-top: 50px; color: #4D4D4D;}
+#section1 .main_table th{ padding: 15px 10px 10px 10px; font-family: 'GmarketSansMedium'; vertical-align: top; margin-top: 10px; width: 30%;}
+#section1 .main_table th::before{ content: ''; display: inline-block; width: 5px; height: 20px; background-color: #E9DFF1; margin-right: 10px; vertical-align: middle;}
+#section1 .main_table td{ padding: 10px 20px;  font-size: 16px;}
+#section1 .sub_table{ display: none;}
+#section1 h5{ font-size: 16px; font-family: 'GmarketSansMedium'; color: #4D4D4D; margin: 50px 0 0 13px;}
+#section1 h5::before{ content: ''; display: inline-block; width: 5px; height: 20px; background-color: #E9DFF1; margin-right: 10px; vertical-align: middle;}
+#section1 .used_tools > ul{ width: 90%; display: flex; justify-content: space-between; margin-top: 30px;}
+#section1 .used_tools > ul > li{ width: 90px; line-height: 90px; height: 90px; border-radius: 50px; text-align: center; background-color: #D6C2E4; color: #fff; float: left; font-family: 'GmarketSansMedium'; font-size: 14px;}
+#section1 .used_tools > ul > li:first-child{ margin-left: 20px;}
+
+/* *** #section2 farmer at home *** */
+
+#section2{ background-color: #E9DFF1;}
+#section2 .contents{ display: inline-block; width: 75%; height: 500px;}
+#section2 .contents_img{ display: inline-block; width: 100%; height: 100%; background-image: url(../img/farmerathome.png); background-position: center center; background-size: cover;}
+#section2 .text_wrap{ display: inline-block; width: 24%; vertical-align: text-bottom; margin-bottom: 15px;}
+#section2 .text{ margin-top: 170px; padding-left: 30px;}
+#section2 h2{ font-size: 60px; color: #fff; margin-bottom: 76px; font-family: 'NOTOSANSKR-BOLD';}
+#section2 .text span{ display: block; font-size: 18px; margin-bottom: 5px; font-family: 'GmarketSansLight'; letter-spacing: -2px; font-weight: lighter;}
+#section2 span.title{ font-size: 30px; margin-bottom: 10px; font-family: 'GmarketSansMedium'; color: #4D4D4D; }
+#section2 .web-btn span{ font-family: '210-웰컴체OTF-R'; letter-spacing: 1px; font-size: 18px; display: inline-block; width: 120px; height: 35px; border-radius: 17px; background-color: #fff; color: #4D4D4D; text-align: center; margin-right: 10px; margin-top: 15px; transition: 0.3s; line-height: 1.9em;}
+#section2 .web-btn span > a{ display: block; width: inherit; color: #4D4D4D; border-radius: 17px;}
+#section2 .web-btn span > a:hover{ background-color: #C5B3D2; color: #fff; transition: ease-in-out .3s;}
+
+/* *** #section3 cheiljemyeonso *** */
+
+#section3{ background-color: #fff;}
+#section3 .contents{ display: inline-block; width: 75%; height: 500px; margin-top: 180px;}
+#section3 .contents_img{ display: inline-block; width: 100%; height: 100%; background-image: url(../img/cheil.png); background-position: center center; background-size: cover;}
+#section3 .text_wrap{ display: inline-block; width: 24%; vertical-align: text-bottom; margin-bottom: 15px;}
+#section3 .text{ margin-top: 170px; padding-right: 30px;}
+#section3 h2{ font-size: 60px; color: #E9DFF1; margin-bottom: 76px; font-family: 'NOTOSANSKR-BOLD';}
+#section3 .text span{ display: block; font-size: 18px; margin-bottom: 5px; font-family: 'GmarketSansLight'; letter-spacing: -2px; font-weight: lighter;}
+#section3 span.title{ font-size: 30px; margin-bottom: 10px; font-family: 'GmarketSansMedium'; color: #4D4D4D; }
+#section3 .web-btn span{ font-family: '210-웰컴체OTF-R'; letter-spacing: 1px; font-size: 18px; display: inline-block; width: 120px; height: 35px; border-radius: 17px; background-color: #E9DFF1; color: #4D4D4D; text-align: center; margin-right: 10px; margin-top: 15px; transition: 0.3s; line-height: 1.9em;}
+#section3 .web-btn span > a{ display: block; width: inherit; color: #4D4D4D; border-radius: 17px;}
+#section3 .web-btn span > a:hover{ background-color: #C5B3D2; color: #fff; transition: ease-in-out .3s;}
+
+/* *** #section4 brandi *** */
+
+#section4{ background-color: #E9DFF1;}
+#section4 .contents{ display: inline-block; width: 75%; height: 500px; margin-top: 180px;}
+#section4 .contents_img{ display: inline-block; width: 100%; height: 100%; background-image: url(../img/brandi_1.png); background-position: center center; background-size: cover;}
+#section4 .text_wrap{ display: inline-block; width: 24%; vertical-align: text-bottom; margin-bottom: 15px;}
+#section4 .text{ margin-top: 170px; padding-left: 30px;}
+#section4 h2{ font-size: 60px; color: #fff; margin-bottom: 76px; font-family: 'NOTOSANSKR-BOLD';}
+#section4 .text span{ display: block; font-size: 18px; margin-bottom: 5px; font-family: 'GmarketSansLight'; letter-spacing: -2px; font-weight: lighter;}
+#section4 span.title{ font-size: 25px; margin-bottom: 10px; font-family: 'GmarketSansMedium'; color: #4D4D4D; }
+#section4 .web-btn span{ font-family: '210-웰컴체OTF-R'; letter-spacing: 1px; font-size: 18px; display: inline-block; width: 120px; height: 35px; border-radius: 17px; background-color: #fff; color: #4D4D4D; text-align: center; margin-right: 10px; margin-top: 15px; transition: 0.3s; line-height: 1.9em;}
+#section4 .web-btn span > a{ display: block; width: inherit; color: #4D4D4D; border-radius: 17px;}
+#section4 .web-btn span > a:hover{ background-color: #C5B3D2; color: #fff; transition: ease-in-out .3s;}
+
+/* *** #section5 giverny *** */
+
+#section5{ background-color: #fff;}
+#section5 .contents{ display: inline-block; width: 75%; height: 500px; margin-top: 180px;}
+#section5 .contents_img{ display: inline-block; width: 100%; height: 100%; background-image: url(../img/giverny.png); background-position: center center; background-size: cover;}
+#section5 .text_wrap{ display: inline-block; width: 24%; vertical-align: text-bottom; margin-bottom: 15px;}
+#section5 .text{ margin-top: 170px; padding-right: 30px;}
+#section5 h2{ font-size: 60px; color: #E9DFF1; margin-bottom: 76px; font-family: 'NOTOSANSKR-BOLD';}
+#section5 .text span{ display: block; font-size: 18px; margin-bottom: 5px; font-family: 'GmarketSansLight'; letter-spacing: -2px; font-weight: lighter;}
+#section5 span.title{ font-size: 30px; margin-bottom: 10px; font-family: 'GmarketSansMedium'; color: #4D4D4D; }
+#section5 .web-btn span{ font-family: '210-웰컴체OTF-R'; letter-spacing: 1px; font-size: 18px; display: inline-block; width: 120px; height: 35px; border-radius: 17px; background-color: #E9DFF1; color: #4D4D4D; text-align: center; margin-right: 10px; margin-top: 15px; transition: 0.3s; line-height: 1.9em;}
+#section5 .web-btn span > a{ display: block; width: inherit; color: #4D4D4D; border-radius: 17px;}
+#section5 .web-btn span > a:hover{ background-color: #C5B3D2; color: #fff; transition: ease-in-out .3s;}
+
+/* *** #section6 contact *** */
+
+#section6{ background-color: #E9DFF1; height: 95vh;}
+#section6 .top_area{ text-align: center; font-size: 25px; color: #C9BED2; font-family: 'GmarketSansMedium'; padding-top: 150px;}
+#section6 .middle_area{ text-align: center; font-size: 30px; color: #4D4D4D; font-family: 'GmarketSansLight'; padding-top: 50px;}
+#section6 .bottom_area{ text-align: center; font-size: 60px; padding-top: 100px;}
+#section6 .bottom_area a{ display: inline-block; color: #4D4D4D; font-family: 'GmarketSansMedium'; position: relative; z-index: 99;}
+#section6 .bottom_area a::after{  content: ""; position: absolute; left: 0; bottom: 0px; width: 0px; height: 50%; margin: 5px 0 0; transition: all 0.2s ease-in-out; transition-duration: 0.3s; opacity: 0; background-color: #fff; z-index: -1; }
+#section6 .bottom_area a:hover::after{ width: 100%; opacity: 1;}
+
+
+/* ******** 미디어쿼리 시작 ! ******** */
+
+/* tablet 1024 */
+@media screen and (min-width:768px) and (max-width:1023px) {
+
+    #section0 .circle1{ left: 15%;}
+    #section0 .circle2{ right: 15%;}
+    #section0 .name_area{font-size: 45px;}
+    #section0 .portfolio_area{font-size: 70px;}
+    #section0 .hide_square1{ display: none;}
+    #section0 .hide_square2{ display: none;}
+    #section0 .scroll_wrap{ position: absolute; left: 38%; bottom: 20%;}
+
+    #section1 .about_me_wrap{ height: 725px; margin-top: 90px;}
+    #section1 .about_me_img{ max-width: 200px; height: 200px;}
+    #section1 ul.question{ font-size: 15px; line-height: 48px; width: 33.21%;}
+    #section1 ul.question li:nth-child(2n-1){ font-size: 13px;}
+    #section1 ul.answer{ font-size: 14px; line-height: 48px; width: 64.98%;}
+    #section1 .resume{ width: 200px; margin: 9px 8%;}
+    #section1 .profile_text_wrap{ height: 725px;}
+    #section1 .profile_text{ max-width: 85%;}
+    #section1 .main_table{ margin-top: 30px;}
+    #section1 .main_table th{ font-size: 14px; }
+    #section1 .main_table td{ font-size: 14px;}
+    #section1 .used_tools > ul > li{ width: 60px; line-height: 60px; height: 60px; font-size: 13px;}
+
+    #section2 .contents{ display: block; width: 100%; margin-top: 0;}
+    #section2 .contents_img{ height: 90%;}
+    #section2 .text_wrap{ display: block; width: 100%; height: 0; margin-top: 0;}
+    #section2 .text{ margin-top: 40px;}
+    #section2 h2{ font-size: 50px; display: inline-block; margin-bottom: 0;}
+    #section2 .text span{ font-size: 16px;}
+    #section2 span.title{ display: inline-block; margin-left: 15px; margin-bottom: 0; font-size: 30px;}
+    #section2 .web-btn span{ margin-top: 10px;}
+
+    #section3 .contents{ display: block; width: 100%; margin-top: 0;}
+    #section3 .contents_img{ height: 90%;}
+    #section3 .text_wrap{ display: block; width: 100%; height: 20px; padding-top: 0;}
+    #section3 .text{ margin-top: 40px; padding-top: 540px;}
+    #section3 h2{ font-size: 50px; display: inline-block; margin-bottom: 0;}
+    #section3 .text span{ font-size: 16px;}
+    #section3 span.title{ display: inline-block; margin-left: 15px; margin-bottom: 0; font-size: 30px;}
+    #section3 .web-btn span{ margin-top: 10px;}
+
+    #section4 .contents{ display: block; width: 100%; margin-top: 0;}
+    #section4 .contents_img{ height: 90%; margin-top: 70px;}
+    #section4 .text_wrap{ display: block; width: 100%; height: 0; margin-top: 0;}
+    #section4 .text{ margin-top: 40px;}
+    #section4 h2{ font-size: 50px; display: inline-block; margin-bottom: 0;}
+    #section4 .text span{ font-size: 16px;}
+    #section4 span.title{ display: inline-block; margin-left: 15px; margin-bottom: 0; font-size: 30px;}
+    #section4 .web-btn span{ margin-top: 10px;}
+
+    #section5 .contents{ display: block; width: 100%; margin-top: 0;}
+    #section5 .contents_img{ height: 90%;}
+    #section5 .text_wrap{ display: block; width: 100%; height: 20px; padding-top: 0;}
+    #section5 .text{ margin-top: 40px; padding-top: 540px;}
+    #section5 h2{ font-size: 50px; display: inline-block; margin-bottom: 0;}
+    #section5 .text span{ font-size: 16px;}
+    #section5 span.title{ display: inline-block; margin-left: 15px; margin-bottom: 0; font-size: 30px;}
+    #section5 .web-btn span{ margin-top: 10px;}
+
+}
+
+/* tablet 768 */
+@media screen and (min-width:460px) and (max-width:767px) {
+    #section0 .circle1{ width: 55px; height: 112px; top: 39%; left: 10%;}
+    #section0 .circle2{ width: 55px; height: 112px; top: 39%; right: 10%;}
+    #section0 .name_area{font-size: 35px; padding-top: 293px;}
+    #section0 .portfolio_area{font-size: 55px;}
+    #section0 .hide_square1{ display: none;}
+    #section0 .hide_square2{ display: none;}
+    #section0 .scroll_wrap{ position: absolute; left: 36%; bottom: 20%;}
+
+    #section1 .about_me_wrap{ display: block; width: 100%; height: 200px; margin-top: 50px; }
+    #section1 .about_me_img{ max-width: 200px; height: 200px; }
+    #section1 .about_me_text{ display: none;}
+    #section1 .resume_mobile{ display: block; width: 156px; height: 36px; line-height: 36px; background-color: #E9DFF1; text-align: center; border-radius: 18px; margin: 20px auto;}
+    #section1 .resume_mobile a{ display: block; width: inherit; border-radius: 18px; color: #4D4D4D; font-family: 'GmarketSansMedium'; font-size: 14px;}
+    #section1 .resume_mobile > a:hover{ background-color: #D6C2E4; color: #fff; transition: ease-in-out .3s; }
+
+    #section1 .profile_text_wrap{ display: block; width: 100%; height: 440px; margin-top: 0; padding-top: 60px;}
+    #section1 h4{ font-size: 25px; text-align: center; margin: 10px 0;}
+    #section1 .profile_text{ max-width: 100%; height: 500px;}
+    #section1 .main_table{ display: none;}
+    #section1 .sub_table{ display: block; text-align: left;}
+    #section1 .sub_table th{ font-size: 16px; padding: 20px 0 10px 0; font-family: 'GmarketSansMedium';}
+    #section1 .sub_table th::before{ content: ''; display: inline-block; width: 5px; height: 20px; background-color: #E9DFF1; margin-right: 10px; vertical-align: middle;}
+    #section1 .sub_table td{ font-size: 14px;}
+    #section1 h5{ font-size: 16px; margin: 16px 0; }
+    #section1 .used_tools > ul{ width: 100%;}
+    #section1 .used_tools > ul > li{ width: 60px; height: 60px; line-height: 60px; border-radius: 30px; font-size: 13px;}
+
+
+    #section2 .contents{ display: block; width: 100%; margin-top: 0;}
+    #section2 .contents_img{ height: 90%; margin-top: 80px;}
+    #section2 .text_wrap{ display: block; width: 100%; height: 0; margin-top: 0;}
+    #section2 .text{ margin-top: 40px;}
+    #section2 h2{ font-size: 50px; display: inline-block; margin-bottom: 0;}
+    #section2 .text span{ font-size: 16px;}
+    #section2 span.title{ display: inline-block; margin-left: 15px; margin-bottom: 0; font-size: 30px;}
+    #section2 .web-btn span{ margin-top: 10px;}
+
+    #section3 .contents{ display: block; width: 100%; margin-top: 0;}
+    #section3 .contents_img{ height: 90%; margin-top: 40px;}
+    #section3 .text_wrap{ display: block; width: 100%; height: 20px; padding-top: 0;}
+    #section3 .text{ margin-top: 0px; padding-top: 540px; padding-left: 30px;}
+    #section3 h2{ font-size: 50px; display: inline-block; margin-bottom: 0;}
+    #section3 .text span{ font-size: 16px;}
+    #section3 span.title{ display: inline-block; margin-left: 15px; margin-bottom: 0; font-size: 30px;}
+    #section3 .web-btn span{ margin-top: 10px;}
+
+    #section4 .contents{ display: block; width: 100%; margin-top: 0;}
+    #section4 .contents_img{ height: 90%; margin-top: 70px;}
+    #section4 .text_wrap{ display: block; width: 100%; height: 0; margin-top: 0;}
+    #section4 .text{ margin-top: 40px;}
+    #section4 h2{ font-size: 50px; display: inline-block; margin-bottom: 0;}
+    #section4 .text span{ font-size: 16px;}
+    #section4 span.title{ display: inline-block; margin-left: 15px; margin-bottom: 0; font-size: 25px;}
+    #section4 .web-btn span{ margin-top: 10px;}
+
+    #section5 .contents{ display: block; width: 100%; margin-top: 0;}
+    #section5 .contents_img{ height: 90%; margin-top: 40px;}
+    #section5 .text_wrap{ display: block; width: 100%; height: 20px; padding-top: 0;}
+    #section5 .text{ margin-top: 0px; padding-top: 540px; padding-left: 30px;}
+    #section5 h2{ font-size: 50px; display: inline-block; margin-bottom: 0;}
+    #section5 .text span{ font-size: 16px;}
+    #section5 span.title{ display: inline-block; margin-left: 15px; margin-bottom: 0; font-size: 30px;}
+    #section5 .web-btn span{ margin-top: 10px;}
+
+    #section6 .top_area{ font-size: 20px;}
+    #section6 .middle_area{ font-size: 25px;}
+    #section6 .bottom_area{ font-size: 35px;}
+}
+
+/* mobile */
+@media screen and (max-width:459px) {
+    #section0 .circle1{ width: 31px; height: 63px; top: 41%; left: 5%;}
+    #section0 .circle2{ width: 31px; height: 63px; top: 41%; right: 5%;}
+    #section0 .name_area{font-size: 30px; padding-top: 293px;}
+    #section0 .portfolio_area{font-size: 40px;}
+    #section0 .hide_square1{ display: none;}
+    #section0 .hide_square2{ display: none;}
+    #section0 .scroll_wrap{ position: absolute; left: 28%; bottom: 20%;}
+    
+    #section1 .about_me_wrap{ display: block; width: 100%; height: 200px; margin-top: 50px; }
+    #section1 .about_me_img{ max-width: 150px; height: 150px; }
+    #section1 .about_me_text{ display: none;}
+    #section1 .resume_mobile{ display: block; width: 156px; height: 36px; line-height: 36px; background-color: #E9DFF1; text-align: center; border-radius: 18px; margin: 20px auto;}
+    #section1 .resume_mobile a{ display: block; width: inherit; border-radius: 18px; color: #4D4D4D; font-family: 'GmarketSansMedium'; font-size: 14px;}
+    #section1 .resume_mobile > a:hover{ background-color: #D6C2E4; color: #fff; transition: ease-in-out .3s; }
+
+    #section1 .profile_text_wrap{ display: block; width: 100%; height: 500px; margin-top: 0;}
+    #section1 h4{ font-size: 25px; text-align: center; margin-top: 10px; padding-top: 30px;}
+    #section1 .profile_text{ max-width: 100%; height: 500px; }
+    #section1 .main_table{ display: none;}
+    #section1 .sub_table{ display: block; text-align: left;}
+    #section1 .sub_table th{ font-size: 16px; padding: 10px 0; font-family: 'GmarketSansMedium';}
+    #section1 .sub_table th::before{ content: ''; display: inline-block; width: 5px; height: 20px; background-color: #E9DFF1; margin-right: 10px; vertical-align: middle;}
+    #section1 .sub_table td{ font-size: 14px;}
+    #section1 h5{ font-size: 16px; margin: 16px 0; }
+    #section1 .used_tools > ul{ width: 100%;}
+    #section1 .used_tools > ul > li{ width: 50px; height: 50px; line-height: 50px; border-radius: 30px; font-size: 12px;}
+    #section1 .used_tools > ul > li:first-child{ margin-left: 0px;}
+
+    #section2 .contents{ display: block; width: 100%; margin-top: 0;}
+    #section2 .contents_img{ height: 90%; margin-top: 80px;}
+    #section2 .text_wrap{ display: block; width: 100%; height: 0; margin-top: 0;}
+    #section2 .text{ margin-top: 40px; padding-left: 10px;}
+    #section2 h2{ font-size: 50px; display: inline-block; margin-bottom: 0;}
+    #section2 .text span{ font-size: 16px;}
+    #section2 span.title{ display: inline-block; margin-left: 15px; margin-bottom: 0; font-size: 30px;}
+    #section2 .web-btn span{ margin-top: 10px;}
+
+    #section3 .contents{ display: block; width: 100%; margin-top: 0;}
+    #section3 .contents_img{ height: 90%; margin-top: 40px;}
+    #section3 .text_wrap{ display: block; width: 100%; height: 20px; padding-top: 0;}
+    #section3 .text{ margin-top: 0px; padding-top: 540px; padding-left: 10px;}
+    #section3 h2{ font-size: 50px; display: inline-block; margin-bottom: 0;}
+    #section3 .text span{ font-size: 16px;}
+    #section3 span.title{ display: inline-block; margin-left: 15px; margin-bottom: 0; font-size: 30px;}
+    #section3 .web-btn span{ margin-top: 10px; margin-right: 0;}
+
+    #section4 .contents{ display: block; width: 100%; margin-top: 0;}
+    #section4 .contents_img{ height: 90%; margin-top: 70px;}
+    #section4 .text_wrap{ display: block; width: 100%; height: 0; margin-top: 0;}
+    #section4 .text{ margin-top: 40px; padding-left: 10px;}
+    #section4 h2{ font-size: 50px; display: inline-block; margin-bottom: 0;}
+    #section4 .text span{ font-size: 16px;}
+    #section4 span.title{ display: inline-block; margin-left: 15px; margin-bottom: 0; font-size: 20px;}
+    #section4 .web-btn span{ margin-top: 10px;}
+
+    #section5 .contents{ display: block; width: 100%; margin-top: 0;}
+    #section5 .contents_img{ height: 90%; margin-top: 40px;}
+    #section5 .text_wrap{ display: block; width: 100%; height: 20px; padding-top: 0;}
+    #section5 .text{ margin-top: 0px; padding-top: 540px; padding-left: 10px;}
+    #section5 h2{ font-size: 50px; display: inline-block; margin-bottom: 0;}
+    #section5 .text span{ font-size: 16px;}
+    #section5 span.title{ display: inline-block; margin-left: 15px; margin-bottom: 0; font-size: 30px;}
+    #section5 .web-btn span{ margin-top: 10px; margin-right: 0;}
+
+    #section6 .top_area{ font-size: 18px;}
+    #section6 .middle_area{ font-size: 20px;}
+    #section6 .bottom_area{ font-size: 30px;}
+}
